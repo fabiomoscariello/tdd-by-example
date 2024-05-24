@@ -2,7 +2,7 @@ package guru.springframework;
 
 public class Dollar {
 
-    public int amount;
+    private int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
@@ -10,6 +10,14 @@ public class Dollar {
 
     public void times(int times) {
         this.amount *= times;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
 }
