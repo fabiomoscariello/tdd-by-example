@@ -20,4 +20,14 @@ public class Dollar {
         this.amount = amount;
     }
 
+    public boolean equals(Object object){
+        Dollar dollar = (Dollar) object;
+        return amount == dollar.amount;
+    }
+
+    public boolean hashCode(Object object){
+        Dollar dollar = (Dollar) object;
+        return amount == dollar.amount;
+    }
+
 }
