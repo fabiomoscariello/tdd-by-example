@@ -22,4 +22,13 @@ public class MoneyTest {
         assertNotEquals(new Dollar(5), new Dollar(10));
     }
 
+    @Test
+    void testFranc(){
+        Franc myFranc = new Franc(5);
+        Franc product = myFranc.times(2);
+        assertEquals(new Franc(10), product);
+        product = myFranc.times(3);
+        assertEquals(new Franc(15), product);
+    }
+
 }
